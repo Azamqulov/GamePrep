@@ -1,0 +1,397 @@
+/* Policy Pages Styling for GameLingua */
+
+/* Policy Hero Section */
+.policy-hero {
+    padding: 150px 0 80px;
+    background: linear-gradient(135deg, rgba(88, 43, 232, 0.9) 0%, rgba(23, 105, 255, 0.9) 100%);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .policy-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.2;
+  }
+  
+  .policy-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .policy-hero h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .policy-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease forwards 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Policy Content Section */
+  .policy-content {
+    padding: 60px 0 100px;
+    background-color: #f8f9fa;
+  }
+  
+  .policy-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .policy-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(135deg, #582be8 0%, #1769ff 100%);
+  }
+  
+  .policy-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    border-left: 3px solid #582be8;
+    padding-left: 20px;
+    font-style: italic;
+  }
+  
+  .policy-container h2 {
+    font-size: 2rem;
+    color: #222;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(88, 43, 232, 0.1);
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .policy-container h2:hover {
+    color: #582be8;
+  }
+  
+  .policy-container h2:first-of-type {
+    margin-top: 0;
+  }
+  
+  .policy-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #582be8 0%, #1769ff 100%);
+    transition: width 0.3s ease;
+  }
+  
+  .policy-container h2:hover::after {
+    width: 100px;
+  }
+  
+  .policy-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 30px 0 15px;
+    position: relative;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .policy-container h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #582be8 0%, #1769ff 100%);
+    transition: width 0.3s ease;
+  }
+  
+  .policy-container h3:hover::after {
+    width: 100%;
+  }
+  
+  .policy-container p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .policy-container ul,
+  .policy-container ol {
+    margin: 0 0 25px 20px;
+    color: #555;
+  }
+  
+  .policy-container li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .policy-container li:hover {
+    transform: translateX(5px);
+  }
+  
+  .policy-container a {
+    color: #582be8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .policy-container a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #582be8;
+    transition: width 0.3s ease;
+  }
+  
+  .policy-container a:hover {
+    color: #1769ff;
+  }
+  
+  .policy-container a:hover::after {
+    width: 100%;
+  }
+  
+  .contact-list {
+    list-style: none;
+    margin-left: 0 !important;
+    padding-left: 0;
+  }
+  
+  .contact-list li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-list li strong {
+    margin-right: 10px;
+    color: #582be8;
+  }
+  
+  .policy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .policy-table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .policy-table th {
+    background: linear-gradient(135deg, rgba(88, 43, 232, 0.1) 0%, rgba(23, 105, 255, 0.1) 100%);
+    padding: 15px;
+    text-align: left;
+    color: #333;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .policy-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    transition: background-color 0.3s ease;
+  }
+  
+  .policy-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .policy-table tr:hover td {
+    background-color: rgba(88, 43, 232, 0.05);
+  }
+  
+  .policy-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(88, 43, 232, 0.1);
+  }
+  
+  .policy-navigation a {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    color: #582be8;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .policy-navigation a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(135deg, #582be8 0%, #1769ff 100%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  
+  .policy-navigation a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(88, 43, 232, 0.2);
+  }
+  
+  .policy-navigation a:hover::before {
+    width: 100%;
+  }
+  
+  .policy-navigation a i {
+    margin: 0 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .policy-navigation a:hover i:first-child {
+    transform: translateX(-5px);
+  }
+  
+  .policy-navigation a:hover i:last-child {
+    transform: translateX(5px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .policy-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .policy-container {
+      padding: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .policy-hero {
+      padding: 120px 0 60px;
+    }
+  
+    .policy-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .policy-container {
+      padding: 30px;
+    }
+  
+    .policy-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .policy-container h3 {
+      font-size: 1.3rem;
+    }
+  
+    .policy-navigation {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .policy-navigation a {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .policy-table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .policy-hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .policy-container {
+      padding: 20px;
+    }
+  
+    .policy-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .policy-container h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
